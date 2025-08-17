@@ -1292,10 +1292,10 @@ include $(BUILD_SYSTEM)/sysprop_config.mk
 include $(BUILD_SYSTEM)/android_soong_config_vars.mk
 
 ifneq ($(AFTERLIFE_BUILD),)
-ifneq ($(wildcard device/afterlife/sepolicy/common/sepolicy.mk),)
+ifneq ($(wildcard device/lineage/sepolicy/common/sepolicy.mk),)
 ## We need to be sure the global selinux policies are included
 ## last, to avoid accidental resetting by device configs
-$(eval include device/afterlife/sepolicy/common/sepolicy.mk)
+$(eval include device/lineage/sepolicy/common/sepolicy.mk)
 endif
 endif
 
